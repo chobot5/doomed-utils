@@ -1,13 +1,30 @@
 {
   "name": "doomed-utils",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
   "private": false,
   "files": ["dist/**",".npmignore",".gitignore","LICENSE","README.md","CHANGELOG.md"],
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "exports": {
-    "./utils/*": "./dist/utils/*"
+    "./dates/*": {
+      "import": "./dist/dates/*.mjs",
+      "require": "./dist/dates/*.js"
+    },
+    "./utils/*": {
+      "import": "./dist/utils/*.mjs",
+      "require": "./dist/utils/*.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "utils/*": [
+        "dist/utils/*.d.ts"
+      ],
+      "dates/*": [
+        "dist/dates/*.d.ts"
+      ]
+    }
   },
   "scripts": {
     "build": "env NODE_ENV=production tsup --config=tsup.config.ts",

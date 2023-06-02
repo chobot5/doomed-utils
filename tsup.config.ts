@@ -8,7 +8,7 @@ export default defineConfig({
   dts: true,
   format: ['cjs', 'esm'],
   minify: env === 'production',
-  bundle: env === 'production',
+  bundle: false,
   skipNodeModulesBundle: true,
   watch: env === 'development',
   target: 'es2020',
