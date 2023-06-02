@@ -12,6 +12,11 @@
     "lint": "eslint -c .eslintrc.json --ext ts,tsx src/**/*",
     "test": "vitest"
   },
+  "workspaces": [],
+  "engines": {
+    "node": ">16.0.0",
+    "pnpm": ">=6"
+  },
   "keywords": [],
   "author": "Milan Mladek",
   "license": "ISC",
