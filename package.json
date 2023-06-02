@@ -1,13 +1,16 @@
 {
   "name": "doomed-utils",
-  "version": "0.0.5",
+  "version": "0.0.3",
   "description": "",
   "private": false,
-  "files": ["dist",".npmignore",".gitignore","LICENSE","README.md","CHANGELOG.md"],
+  "files": ["dist/**",".npmignore",".gitignore","LICENSE","README.md","CHANGELOG.md"],
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "exports": {
+    "./*": "./dist/**/*"
+  },
   "scripts": {
     "build": "env NODE_ENV=production tsup --config=tsup.config.ts",
     "lint": "eslint -c .eslintrc.json --ext ts,tsx src/**/*",
