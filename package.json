@@ -1,0 +1,31 @@
+{
+  "name": "doomed-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "env NODE_ENV=production tsup --config=tsup.config.ts",
+    "release": "pnpm run build",
+    "lint": "eslint -c .eslintrc.json --ext ts,tsx src/**/*",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Milan Mladek",
+  "license": "ISC",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "prettier": "^2.8.8",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.3"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  }
+}
