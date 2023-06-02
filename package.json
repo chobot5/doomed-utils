@@ -11,7 +11,7 @@
     "build": "env NODE_ENV=production tsup --config=tsup.config.ts",
     "lint": "eslint -c .eslintrc.json --ext ts,tsx src/**/*",
     "test": "vitest",
-    "release": "changeset publish"
+    "release": "pnpm run build && changeset publish"
   },
   "engines": {
     "node": ">16.0.0",
