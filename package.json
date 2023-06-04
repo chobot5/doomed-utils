@@ -4,16 +4,16 @@
   "description": "",
   "private": false,
   "files": ["dist/**",".npmignore",".gitignore","LICENSE","README.md","CHANGELOG.md"],
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
   "exports": {
     "./dates/*": {
       "import": "./dist/dates/*.mjs",
-      "require": "./dist/dates/*.js"
+      "require": "./dist/dates/*.js",
+      "types": "./dist/dates/*.d.ts"
     },
     "./utils/*": {
       "import": "./dist/utils/*.mjs",
-      "require": "./dist/utils/*.js"
+      "require": "./dist/utils/*.js",
+      "types": "./dist/utils/*.d.ts"
     }
   },
   "typesVersions": {
