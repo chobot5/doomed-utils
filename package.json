@@ -1,6 +1,6 @@
 {
   "name": "doomed-utils",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "",
   "private": false,
   "files": [
@@ -11,11 +11,27 @@
     "README.md",
     "CHANGELOG.md"
   ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./utils": {
+      "import": "./dist/utils/index.mjs",
+      "require": "./dist/utils/index.js",
+      "types": "./dist/utils/index.d.ts"
+    },
     "./utils/*": {
       "import": "./dist/utils/*.mjs",
       "require": "./dist/utils/*.js",
       "types": "./dist/utils/*.d.ts"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts"
     }
   },
   "typesVersions": {
