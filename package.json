@@ -3,13 +3,15 @@
   "version": "0.0.10",
   "description": "",
   "private": false,
-  "files": ["dist/**",".npmignore",".gitignore","LICENSE","README.md","CHANGELOG.md"],
+  "files": [
+    "dist/**",
+    ".npmignore",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "exports": {
-    "./dates/*": {
-      "import": "./dist/dates/*.mjs",
-      "require": "./dist/dates/*.js",
-      "types": "./dist/dates/*.d.ts"
-    },
     "./utils/*": {
       "import": "./dist/utils/*.mjs",
       "require": "./dist/utils/*.js",
@@ -20,9 +22,6 @@
     "*": {
       "utils/*": [
         "dist/utils/*.d.ts"
-      ],
-      "dates/*": [
-        "dist/dates/*.d.ts"
       ]
     }
   },
@@ -40,17 +39,15 @@
   "author": "Milan Mladek",
   "license": "MIT",
   "devDependencies": {
-    "@changesets/cli": "^2.26.1",
-    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-    "@typescript-eslint/eslint-plugin": "^5.59.8",
-    "@typescript-eslint/parser": "^5.59.8",
-    "eslint": "^8.41.0",
+    "@changesets/cli": "^2.27.1",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "commitlint": "^19.0.3",
+    "eslint": "^8.57.0",
     "prettier": "^2.8.8",
     "tsup": "^6.7.0",
-    "typescript": "^5.0.4",
-    "vitest": "^0.31.3"
-  },
-  "dependencies": {
-    "date-fns": "^2.30.0"
+    "typescript": "^5.3.3",
+    "vitest": "^0.31.4"
   }
 }
