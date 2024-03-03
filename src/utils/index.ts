@@ -1,2 +1,4 @@
-export * from './objectEntries'
-export * from './objectKeys'
+import objectEntries from './objectEntries'
+import objectKeys from './objectKeys'
+
+export { objectEntries, objectKeys }
