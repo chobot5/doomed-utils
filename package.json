@@ -1,6 +1,6 @@
 {
   "name": "doomed-utils",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "",
   "private": false,
   "files": [
@@ -21,14 +21,14 @@
       "types": "./dist/index.d.ts"
     },
     "./utils": {
-      "import": "./dist/utils/index.mjs",
-      "require": "./dist/utils/index.js",
-      "types": "./dist/utils/index.d.ts"
+      "import": "./dist/functions/index.mjs",
+      "require": "./dist/functions/index.js",
+      "types": "./dist/functions/index.d.ts"
     },
     "./utils/*": {
-      "import": "./dist/utils/*.mjs",
-      "require": "./dist/utils/*.js",
-      "types": "./dist/utils/*.d.ts"
+      "import": "./dist/functions/*.mjs",
+      "require": "./dist/functions/*.js",
+      "types": "./dist/functions/*.d.ts"
     },
     "./types": {
       "types": "./dist/types/index.d.ts"
