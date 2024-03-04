@@ -37,8 +37,8 @@
   },
   "typesVersions": {
     "*": {
-      "utils/*": [
-        "dist/utils/*.d.ts"
+      "functions/*": [
+        "dist/functions/*.d.ts"
       ]
     }
   },
