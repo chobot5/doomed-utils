@@ -1,5 +1,15 @@
 # doomed-utils
 
+## 0.1.0
+
+### Minor Changes
+
+- 80fbefe: added optional type
+
+### Patch Changes
+
+- 80fbefe: added nullable type
+
 ## 0.0.19
 
 ### Patch Changes
