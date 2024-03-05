@@ -1,16 +1,24 @@
 {
-  "name": "doomed-utils-root",
+  "name": "doomed-utils-testing",
   "version": "0.1.0",
   "description": "",
   "private": false,
-  "workspaces": [
-    "packages/*"
+  "files": [
+    "dist/**",
+    ".npmignore",
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md"
   ],
   "scripts": {
+    "build": "env NODE_ENV=production tsup --config=tsup.config.ts",
+    "lint": "eslint -c .eslintrc.json --ext ts,tsx src/**/*",
+    "test": "vitest",
     "release": "pnpm run build && changeset publish"
   },
   "engines": {
-    "node": ">18.0.0",
+    "node": ">16.0.0",
     "pnpm": ">=6"
   },
   "keywords": [],
