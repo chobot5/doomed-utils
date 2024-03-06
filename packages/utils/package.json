@@ -45,8 +45,7 @@
   "scripts": {
     "build": "env NODE_ENV=production tsup --config=tsup.config.ts",
     "lint": "eslint -c .eslintrc.json --ext ts,tsx src/**/*",
-    "test": "vitest",
-    "release": "pnpm run build && changeset publish"
+    "test": "vitest"
   },
   "engines": {
     "node": ">18.0.0",
