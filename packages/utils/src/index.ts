@@ -1,2 +1,2 @@
 export * from './types'
-export { objectKeys, objectEntries } from './functions'
+export { objectKeys, objectEntries, createEnum, type EnumType } from './functions'
