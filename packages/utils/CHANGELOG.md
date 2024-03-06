@@ -1,5 +1,11 @@
 # doomed-utils
 
+## 0.2.2
+
+### Patch Changes
+
+- ea6d82d: added typed createEnum utility
+
 ## 0.2.1
 
 ### Patch Changes
