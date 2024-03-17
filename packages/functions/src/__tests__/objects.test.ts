@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { objectEntries, objectKeys } from '../objects'
+import { objectEntries, objectKeys } from '../object'
 
 describe('Test objectEntries', () => {
   it('Should return an array of defined object entries', () => {
