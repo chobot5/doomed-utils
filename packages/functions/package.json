@@ -1,6 +1,6 @@
 {
   "name": "@doomedpack/function",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "private": false,
   "files": [
@@ -21,25 +21,25 @@
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./objects": {
-      "import": "./dist/objects.mjs",
-      "require": "./dist/objects.js",
-      "types": "./dist/objects.d.ts"
+    "./object": {
+      "import": "./dist/object/index.mjs",
+      "require": "./dist/object/index.js",
+      "types": "./dist/object/index.d.ts"
     },
-    "./arrays": {
-      "import": "./dist/arrays.mjs",
-      "require": "./dist/arrays.js",
-      "types": "./dist/arrays.d.ts"
+    "./array": {
+      "import": "./dist/array/index.mjs",
+      "require": "./dist/array/index.js",
+      "types": "./dist/array/index.d.ts"
     },
     "./predicates": {
-      "import": "./dist/predicates.mjs",
-      "require": "./dist/predicates.js",
-      "types": "./dist/predicates.d.ts"
+      "import": "./dist/predicates/index.mjs",
+      "require": "./dist/predicates/index.js",
+      "types": "./dist/predicates/index.d.ts"
     },
     "./enums": {
-      "import": "./dist/enums.mjs",
-      "require": "./dist/enums.js",
-      "types": "./dist/enums.d.ts"
+      "import": "./dist/enums/index.mjs",
+      "require": "./dist/enums/index.js",
+      "types": "./dist/enums/index.d.ts"
     },
     "./types": {
       "types": "./dist/types/index.d.ts"
