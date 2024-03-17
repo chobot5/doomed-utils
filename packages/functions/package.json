@@ -1,6 +1,6 @@
 {
-  "name": "doomed-utils",
-  "version": "0.2.3",
+  "name": "@doomed/function",
+  "version": "0.0.1",
   "description": "",
   "private": false,
   "files": [
@@ -21,15 +21,25 @@
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./functions": {
-      "import": "./dist/functions/index.mjs",
-      "require": "./dist/functions/index.js",
-      "types": "./dist/functions/index.d.ts"
+    "./objects": {
+      "import": "./dist/objects.mjs",
+      "require": "./dist/objects.js",
+      "types": "./dist/objects.d.ts"
     },
-    "./functions/*": {
-      "import": "./dist/functions/*.mjs",
-      "require": "./dist/functions/*.js",
-      "types": "./dist/functions/*.d.ts"
+    "./arrays": {
+      "import": "./dist/arrays.mjs",
+      "require": "./dist/arrays.js",
+      "types": "./dist/arrays.d.ts"
+    },
+    "./predicates": {
+      "import": "./dist/predicates.mjs",
+      "require": "./dist/predicates.js",
+      "types": "./dist/predicates.d.ts"
+    },
+    "./enums": {
+      "import": "./dist/enums.mjs",
+      "require": "./dist/enums.js",
+      "types": "./dist/enums.d.ts"
     },
     "./types": {
       "types": "./dist/types/index.d.ts"

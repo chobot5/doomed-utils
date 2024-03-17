@@ -39,7 +39,7 @@ importers:
         specifier: ^0.31.4
         version: 0.31.4
 
-  packages/testing:
+  packages/functions:
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
@@ -72,7 +72,7 @@ importers:
         specifier: ^0.31.4
         version: 0.31.4
 
-  packages/utils:
+  packages/testing:
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1

@@ -4,7 +4,7 @@
 
 ### Patch Changes
 
-- ea6d82d: added typed createEnum utility
+- ea6d82d: added typed enums utility
 
 ## 0.2.1
 
